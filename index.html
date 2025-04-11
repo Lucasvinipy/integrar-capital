@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>integrar capital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="integrar logo.jpg">
+    <style>
+        body {
+            background-color: #f4f5f4;
+            color: #1a3e2b;
+        }
+
+        .header {
+            background-color: #2d4635;
+            padding: 15px;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important;
+        }
+
+        .nav-link.btn {
+            background-color: #b2c8b0;
+            border: none;
+            color: #1a3e2b !important;
+        }
+
+        .nav-link.btn:hover {
+            background-color: #9cb39d;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .logo {
+            max-width: 400px;
+        }
+
+        #btn-sobre-nos {
+            text-align: left;
+        }
+
+        #btn-fale-conosco {
+            text-align: right;
+        }
+
+        #titulo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            
+            
+        }
+        #titulo:hover{
+            background-color: #3b6a4e;
+        }
+
+        .btn-fale-conosco {
+            margin-left: 25px;
+        }
+
+        .form-title {
+            color: #1a3e2b;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            color: #2d4635;
+        }
+
+        .form-control {
+            border-color: #2d4635;
+        }
+
+        .btn-submit {
+            background-color: #2d4635 !important;
+            border: none;
+        }
+
+        .btn-submit:hover {
+            background-color: #3b6a4e !important;
+        }
+
+        .footer {
+            background-color: #2d4635;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .footer a {
+            color: #c9e6c2;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar header">
+        <div class="container d-flex justify-content-between align-items-center w-100">
+            <div>
+                <a class="nav-link btn btn-light text-dark" id="btn-sobre-nos" href="#quemsomos">Sobre nós</a>
+            </div>
+            <div class="position-absolute start-50 translate-middle-x">
+                <a id="titulo" class="navbar-brand text-white m-0" href="#">integrar capital</a>
+            </div>
+            <div>
+                <a class="nav-link btn btn-light text-dark" id="btn-fale-conosco" href="#formulario">Fale Conosco</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="logo-container">
+        <img src="integrar logo.jpg" alt="Logo da Empresa" class="logo">
+    </div>
+
+    <div id="quemsomos" class="container mb-5">
+        <h1>Quem somos</h1>
+        <p>
+            <br>
+            A Integrar Capital é uma empresa especializada na cobrança e gestão de recebíveis, com atuação estratégica em todas as fases do ciclo de recuperação de crédito. Atuamos com ética, tecnologia e eficiência para oferecer soluções personalizadas que maximizam a recuperação de ativos e fortalecem o relacionamento entre credores e clientes.
+            <br>
+
+            Nosso compromisso é oferecer excelência operacional com transparência, segurança jurídica e respeito aos envolvidos, sempre de acordo com as melhores práticas do mercado. Contamos com uma equipe experiente e processos consolidados que garantem agilidade, compliance e resultados consistentes para nossos parceiros.
+        </p>
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center mb-5" id="formulario">
+        <div class="form-container w-100">
+            <h2 class="form-title">Fale Conosco</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nome *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Sobrenome *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Telefone *</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">CPF *</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email *</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Assunto *</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mensagem *</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="privacidade" required>
+                    <label class="form-check-label" for="privacidade">Concordo com as políticas de privacidade</label>
+                </div>
+                <button type="submit" class="btn btn-submit w-100 text-white">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1200px; margin: auto;">
+            <div style="flex: 1; min-width: 250px; margin: 10px;">
+                <h2 style="color: #ffffff;">integrar.<span style="color: rgb(74, 141, 97);">capital</span></h2>
+                <p><strong>Fale Conosco:</strong></p>
+                <p>0800 729 34 11 - Central de Negociação</p>
+                <p>0800 729 32 88 - SAC</p>
+                <p>Email: <a href="mailto:sac@tw.capital">sac@tw.capital</a></p>
+                <p>Email Alternativo: <a href="mailto:sac@twcapital.com.br">sac@twcapital.com.br</a></p>
+            </div>
+            <div style="flex: 1; min-width: 250px; margin: 10px;">
+                <p><strong>Relações com Investidores</strong></p>
+                <p>Email: <a href="mailto:investor@tw.capital">investor@tw.capital</a></p>
+                <p><strong>Redes sociais:</strong></p>
+                <a href="#">LinkedIn</a>
+                <a href="#" style="margin-left: 10px;">Instagram</a>
+            </div>
+            <div style="flex: 1; min-width: 250px; margin: 10px;">
+                <p><strong>Links Importantes:</strong></p>
+                <a href="#">Política de Privacidade</a><br>
+                <a href="#">Código de Conduta de Fornecedores</a><br>
+                <a href="#">Termos de Proteção de Dados</a><br>
+                <a href="#">Código de Conduta</a><br>
+                <a href="#">Perguntas Frequentes</a>
+            </div>
+            <div style="flex: 1; min-width: 250px; margin: 10px;">
+                <p><strong>Contato Compliance:</strong></p>
+                <p>Email: <a href="mailto:compliance@tw.capital">compliance@tw.capital</a></p>
+                <p>Email DPO: <a href="mailto:dpo@tw.capital">dpo@tw.capital</a></p>
+                <p><strong>Endereço:</strong></p>
+                <p>Calçada das Margaridas, 163 - SALA 02 - Centro Comercial Alphaville</p>
+                <p>CEP: 06.453-038 - Tel: 4706-4214</p>
+                <p>CNPJ: 16.969.790/0001-58</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px;" id="rodape"> 
+            <img src="fundoiN.png" alt="Imagem do Rodapé" style="max-width: 25%; height: auto;">
+        </div>
+        <p style="font-size: 12px; margin-top: 20px;">
+            Utilizamos apenas cookies necessários para assegurar o funcionamento correto do nosso site.
+            <a href="#">Política de Privacidade</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
